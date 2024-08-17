@@ -8,7 +8,8 @@ This fall detection system is intended to provide a reliable method of detecting
 
 ## Prototype
 
-The device is attached to a belt
+The device is attached to a belt.
+
 <img src="Picture1.jpg" alt="Fall Detection Device" width="300"/>
 
 ## Features
