@@ -1,0 +1,9 @@
+bfall  9
+bwalk 22
+fall1 19
+fall2 50
+ffall 20
+fwalk 20
+sit1  40
+sit2  35
+walk1 25

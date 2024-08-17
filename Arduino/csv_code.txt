@@ -1,0 +1,25 @@
+import serial
+import csv
+
+ser = serial.Serial('COM9', 9600)  # Replace with the correct port name
+
+with open('data.csv', 'w', newline='') as csvfile:
+    csvwriter = csv.writer(csvfile)
+    csvwriter.writerow(['accel_x', 'accel_y', 'accel_z', 'gyro_x', 'gyro_y', 'gyro_z'])
+    
+    while True:
+        line = ser.readline().decode().strip()
+        values = line.split(',')
+        if len(values) != 6:
+            continue
+        try:
+            accel_x = float(values[0])
+            accel_y = float(values[1])
+            accel_z = float(values[2])
+            gyro_x = float(values[3])
+            gyro_y = float(values[4])
+            gyro_z = float(values[5])
+        except ValueError:
+            continue
+        
+        csvwriter.writerow([accel_x, accel_y, accel_z, gyro_x, gyro_y, gyro_z])
