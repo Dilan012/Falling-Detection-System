@@ -6,6 +6,9 @@ This project is a fall detection system designed to monitor and detect falls in 
 
 This fall detection system is intended to provide a reliable method of detecting falls, a common and serious problem among the elderly. The device captures acceleration and gyroscope data using the MPU 6050 sensor and processes the data with a KNN algorithm, which has been trained to recognize different activities, including falls.
 
+## Prototype
+
+The device is attached to a belt
 <img src="Picture1.jpg" alt="Fall Detection Device" width="300"/>
 
 ## Features
